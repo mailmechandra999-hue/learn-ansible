@@ -1,13 +1,13 @@
-- name: demo on variable
+---
+- name: Demo with variables
   hosts: local
   connection: local
   vars:
-    course: "devops"
-    trainer: chandra
-    duration: 3months
-  tasks:
-  - name: print the vars
-    debug:
-      message: "Hi iam learning course name is {{ course }}" my trainer name is {{ trainer }} and course duration is {{ duration }}""
+    course: "DevOps"
+    trainer: "Chandra"
+    duration: "3 months"
 
-   
+  tasks:
+    - name: Print the variables
+      ansible.builtin.debug:
+        msg: "Hi, I am learning {{ course }}. My trainer's name is {{ trainer }}, and the course duration is {{ duration }}."
