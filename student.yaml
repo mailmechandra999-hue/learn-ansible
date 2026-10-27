@@ -1,0 +1,28 @@
+- firstName: "Chandra"
+  lastName: "Naidu"
+  dob: "1990-05-15"
+  addresess:
+    - type: "permanent"
+      street: "gandhi street"
+      city: "hyderabad"
+    - type: "temporary"
+      street: "shivaji street"
+      city: "chittoor"
+  skills:
+    os: "linux"
+    IDE: vscode
+    CM: ansible
+- firstName: "Chandra"
+  lastName: "Naidu"
+  dob: "1990-05-15"
+  addresess:
+    - type: "permanent"
+      street: "gandhi street"
+      city: "hyderabad"
+    - type: "temporary"
+      street: "shivaji street"
+      city: "chittoor"
+  skills:
+    os: "linux"
+    IDE: vscode
+    CM: ansible

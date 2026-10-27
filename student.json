@@ -1,0 +1,22 @@
+{
+  "firstName": "Chandra",
+  "lastName": "Naidu",
+  "dob": "1999-06-20",
+  "addresses": [
+    {
+      "type": "permanent",
+      "city": "Hyderabad",
+      "doorNo": "02/2"
+    },
+    {
+      "type": "permanent",
+      "city": "Hyderabad",
+      "doorNo": "02/2"
+    }
+  ],
+  "skills": {
+    "os": "Linux",
+    "ide": "VS Code",
+    "configurationManagement": "Ansible"
+  }
+}

@@ -1,0 +1,16 @@
+<student>
+    <firstname>chandrababu</firstname>
+	<lastname>naidu</lastname>
+	<dob>1950-04-20</dob>
+	<addresess>
+		<address type="temporary">
+			<street>2345</street>
+			<city>hyd</city>
+		</address>
+		<address type="permanent">
+			<street>12345</street>
+			<city>chittoor</city>
+		</address>
+	</addresess>
+</student>
+     
