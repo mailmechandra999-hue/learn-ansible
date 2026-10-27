@@ -2,6 +2,7 @@
   hosts: local
   connection: local
   tasks:
-  - name: 
+  - name: print a message
     ansible.builtin.debug:
+      msg: "Hello Ansible........"
   
