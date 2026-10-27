@@ -1,13 +1,17 @@
 ---
-- name: Demo with variables
+- name: Task-level variables
   hosts: local
   connection: local
   vars:
-    course: "DevOps"
-    trainer: "Chandra"
-    duration: "3 months"
+    property: "100 acres"
 
   tasks:
-    - name: Print the variables
+    - name: Print the play-level variable
       ansible.builtin.debug:
-        msg: "Hi, I am learning {{ course }}. My trainer's name is {{ trainer }}, and the course duration is {{ duration }}."
+        msg: "Hi, I got {{ property }} from my father."
+
+    - name: Print the task-level variable
+      vars:
+        property: "10 acres"
+      ansible.builtin.debug:
+        msg: "Hi, I got {{ property }} from my brother."
