@@ -14,8 +14,8 @@
       trainer: Chandra
       months: 4
     exact_duration_in_months: 4.5 #
-    tasks:
-    - name: print course details and type
+  tasks:
+  - name: print course details and type
       debug: 
        msg: |
          name: "{{ course }}: {{course | type_debug }}"
