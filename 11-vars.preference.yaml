@@ -3,9 +3,9 @@
   hosts: local
   connection: local
 
-  vars:
-    course: "devops from PLAY"
-    duration: "3 months"
+  # vars:
+  #   course: "devops from PLAY"
+  #   duration: "3 months"
 
   # vars_prompt:
   #   - name: course
