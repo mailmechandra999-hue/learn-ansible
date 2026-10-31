@@ -1,4 +1,4 @@
-- name: pront varibles from prompt
+- name: varibles from promt
   hosts: local
   connection: local
   vars_promt:
@@ -9,7 +9,6 @@
   - name: password
     promt: pls enter your password
     private: true 
-    
   tasks: 
   - name: print confidentials information
     debug:
