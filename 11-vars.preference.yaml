@@ -7,13 +7,13 @@
     course: "devops from PLAY"
     duration: "3 months"
 
-  vars_prompt:
-    - name: course
-      prompt: "Please enter your course"
-      private: false
+  # vars_prompt:
+  #   - name: course
+  #     prompt: "Please enter your course"
+  #     private: false
 
-  vars_files:
-    - 06-course.yaml
+  # vars_files:
+  #   - 06-course.yaml
 
   tasks:
     - name: Print course information
