@@ -4,7 +4,7 @@
   connection: local
 
   vars_files:
-    - course.yaml
+    - 06-course.yaml
 
   tasks:
     - name: Print course information
