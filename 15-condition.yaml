@@ -1,0 +1,16 @@
+- name: install inginx in redhat and debian
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: "install nginx in redhat"
+    dnf:
+      state: present
+      name: nginx
+    when: ansible_facts.os_family == "RedHat"
+
+  - name: "install nginx in debian"
+    apt:
+      state: present
+      name: nginx
+    when: ansible_facts.os_family == "debian"
