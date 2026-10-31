@@ -17,8 +17,8 @@
 
   tasks:
     - name: Print course information
-      vars:
-        course: "devops from TASK"
+      # vars:
+      #   course: "devops from TASK"
 
       ansible.builtin.debug:
         msg: "Hi, I am learning {{ course }}"
