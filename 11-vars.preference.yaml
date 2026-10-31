@@ -1,0 +1,21 @@
+---
+- name: Variables from files
+  hosts: local
+  connection: local
+  vars:
+    course: "devops from PLAY"
+    duration: "3 months"
+
+  vars_prompt:
+    - name: cousrse
+      prompt: "Please enter your course"
+      private: false
+
+  vars_files:
+    - 06-course.yaml
+
+  tasks:
+    - name: Print course information
+      course: "devops from task"
+      ansible.builtin.debug:
+        msg: "Hi, I am learning {{ course }}"
