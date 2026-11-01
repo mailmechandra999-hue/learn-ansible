@@ -10,7 +10,7 @@
     - Chandra
     - Babu
     topic: DEVOPS
-    topic: devops
+    topic1: devops
   tasks:
     - name: Convert topics to a list
       ansible.builtin.set_fact:
@@ -30,7 +30,7 @@
 
     - name: print devops as upper_case
       debug:
-        msg: "print {{topic | upper}}"
+        msg: "print {{topic1 | upper}}"
 
 
 
