@@ -1,0 +1,13 @@
+- name: create a user
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name : check user exist or not
+    command: id roboshop
+    register: user_output
+    ignore_errors: true 
+
+  - name: print the output
+    debug:
+      msg: "print user: {{user_output}}"
