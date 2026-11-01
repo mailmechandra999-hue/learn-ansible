@@ -11,5 +11,5 @@
 
   - name: print the topics
     debug:
-      msg: "Topics are {{ topics | split }}"
+      msg: "Topics are {{ topics.split(',') | map('trim') | list}} "
 

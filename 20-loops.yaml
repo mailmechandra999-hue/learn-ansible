@@ -1,0 +1,16 @@
+---
+- name: Convert string to list
+  hosts: local
+  connection: local
+
+  vars:
+    topics: "linux,docker,terraform,kubernetes"
+
+  tasks:
+    - name: Convert topics to a list
+      ansible.builtin.set_fact:
+        topics_list: "{{ topics.split(',') | map('trim') | list }}"
+
+    - name: Print topics list
+      ansible.builtin.debug:
+        var: topics_list
