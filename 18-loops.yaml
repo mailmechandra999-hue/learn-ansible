@@ -1,0 +1,19 @@
+- name: install packages
+  hosts: local
+  connection: local
+  become: yes
+
+  vars:
+    packages:
+    - {{ name: "nginx",state: "present" }}
+    - {{ name: "htop",state: "present" }}
+    - {{ name: "mysql",state: "absent" }}
+
+  tasks:
+  - name: install packages
+    package:
+      name: "{{item.name}}"
+      name: "{{item.state}}"
+      state: present
+    loop: "{{packages}}"
+    
