@@ -6,10 +6,10 @@
      - nginx
      - mysql
      - htop
-     tasks:
-     - name: install packages
-       package:
-         name: "{{item}}"
-         state: present
-       loop: packages
+    tasks:
+    - name: install packages
+      package:
+        name: "{{item}}"
+        state: present
+      loop: packages
   
