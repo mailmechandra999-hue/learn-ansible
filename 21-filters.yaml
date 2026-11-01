@@ -22,15 +22,15 @@
     
     - name: print full name as string
       debug:
-        msg: "Full name: {{name | join('')}}
+        msg: "Full name: {{name | join(' ')}}"
 
     - name: print DEVOPS as lower_case
       debug:
-        msg: "print {{topic | lower}}"
+        msg: "topic: {{topic | lower}}"
 
     - name: print devops as upper_case
       debug:
-        msg: "print {{topic1 | upper}}"
+        msg: "topic1: {{topic1 | upper}}"
 
 
 
