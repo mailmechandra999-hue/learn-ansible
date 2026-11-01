@@ -1,0 +1,9 @@
+- name: create user
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: creat user
+    ansible.builtin.user:  # useradd 
+    name: roboshop 
+    
