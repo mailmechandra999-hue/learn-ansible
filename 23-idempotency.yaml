@@ -4,6 +4,6 @@
   become: yes
   tasks:
   - name: creat user
-    ansible.builtin.user:  # useradd 
-    name: roboshop 
+    user:           
+      name: roboshop 
     
