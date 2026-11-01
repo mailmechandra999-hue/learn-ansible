@@ -1,0 +1,37 @@
+---
+- name: Convert string to list
+  hosts: local
+  connection: local
+
+  vars:
+    topics: "linux,docker,terraform,kubernetes"
+    name:
+    - Challa
+    - Chandra
+    - Babu
+    topic: DEVOPS
+    topic: devops
+  tasks:
+    - name: Convert topics to a list
+      ansible.builtin.set_fact:
+        topics_list: "{{ topics.split(',') | map('trim') | list }}"
+
+    - name: Print topics list
+      ansible.builtin.debug:
+        var: topics_list
+    
+    - name: print full name as string
+      debug:
+        msg: "Full name: {{name | join('')}}
+
+    - name: print DEVOPS as lower_case
+      debug:
+        msg: "print {{topic | lower}}"
+
+    - name: print devops as upper_case
+      debug:
+        msg: "print {{topic | upper}}"
+
+
+
+
