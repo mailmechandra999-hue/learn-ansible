@@ -5,9 +5,9 @@
 
   vars:
     packages:
-    - {{ name: "nginx",state: "present" }}
-    - {{ name: "htop",state: "present" }}
-    - {{ name: "mysql",state: "absent" }}
+    - { name: "nginx",state: "present" }
+    - { name: "htop",state: "present" }
+    - { name: "mysql",state: "absent" }
 
   tasks:
   - name: install packages
