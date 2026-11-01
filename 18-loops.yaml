@@ -13,7 +13,6 @@
   - name: install packages
     package:
       name: "{{item.name}}"
-      name: "{{item.state}}"
-      state: present
+      state : "{{item.state}}"
     loop: "{{packages}}"
     
